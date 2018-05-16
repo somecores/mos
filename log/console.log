@@ -1,0 +1,102 @@
+# Design: Design mos6509 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder $DSN/src/bigmux.vhd $DSN/src/controller.vhd $DSN/src/alu.vhd $DSN/src/tb_mp.vhd $DSN/src/ctrl_unit.vhd $DSN/src/datapath.vhd $DSN/src/ir.vhd $DSN/src/memory.vhd $DSN/src/microprocessor.bde $DSN/src/microprocessor.vhd $DSN/src/obuf.vhd $DSN/src/pc.vhd $DSN/src/reg_file.vhd $DSN/src/smallmux.vhd
+# Compile with File Reorder...
+# DRC: Checking file 'c:\My_Designs\mos\mos6509\src\microprocessor.bde'.
+# DRC: Warning: microprocessor.bde - 0 error(s), 14 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\mos\mos6509\compile\microprocessor.vhd from c:\My_Designs\mos\mos6509\src\microprocessor.bde ...
+# Generation successful
+# File: c:\My_Designs\mos\mos6509\src\bigmux.vhd
+# Compile Entity "bigmux"
+# Compile Architecture "behv" of Entity "bigmux"
+# File: c:\My_Designs\mos\mos6509\src\controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "fsm" of Entity "controller"
+# File: c:\My_Designs\mos\mos6509\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "behv" of Entity "alu"
+# File: c:\My_Designs\mos\mos6509\src\tb_mp.vhd
+# Compile Entity "TB_MP"
+# Compile Architecture "behv" of Entity "TB_MP"
+# Warning: ELAB1_0026: tb_mp.vhd : (31, 0): There is no default binding for component "microprocessor".(No entity named "microprocessor" was found).
+# Compile Configuration "CFG_TB_MP"
+# File: c:\My_Designs\mos\mos6509\src\ctrl_unit.vhd
+# Compile Entity "ctrl_unit"
+# Compile Architecture "struct" of Entity "ctrl_unit"
+# Warning: ELAB1_0026: ctrl_unit.vhd : (106, 0): There is no default binding for component "PC".(No entity named "PC" was found).
+# Warning: ELAB1_0026: ctrl_unit.vhd : (107, 0): There is no default binding for component "IR".(No entity named "IR" was found).
+# File: c:\My_Designs\mos\mos6509\src\datapath.vhd
+# Compile Entity "datapath"
+# Compile Architecture "struct" of Entity "datapath"
+# Warning: ELAB1_0026: datapath.vhd : (85, 0): There is no default binding for component "smallmux".(No entity named "smallmux" was found).
+# Warning: ELAB1_0026: datapath.vhd : (87, 0): There is no default binding for component "reg_file".(No entity named "reg_file" was found).
+# Warning: ELAB1_0026: datapath.vhd : (93, 0): There is no default binding for component "obuf".(No entity named "obuf" was found).
+# File: c:\My_Designs\mos\mos6509\src\IR.vhd
+# Compile Entity "IR"
+# Compile Architecture "behv" of Entity "IR"
+# File: c:\My_Designs\mos\mos6509\src\memory.vhd
+# Compile Entity "memory"
+# Compile Architecture "behv" of Entity "memory"
+# File: .\microprocessor.vhd
+# Compile Entity "microprocessor"
+# Compile Architecture "structure" of Entity "microprocessor"
+# File: c:\My_Designs\mos\mos6509\src\microprocessor.vhd
+# Compile Entity "microprocessor"
+# Compile Architecture "structure" of Entity "microprocessor"
+# File: c:\My_Designs\mos\mos6509\src\obuf.vhd
+# Compile Entity "obuf"
+# Compile Architecture "behv" of Entity "obuf"
+# File: c:\My_Designs\mos\mos6509\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "behv" of Entity "PC"
+# File: c:\My_Designs\mos\mos6509\src\reg_file.vhd
+# Compile Entity "reg_file"
+# Compile Architecture "behv" of Entity "reg_file"
+# File: c:\My_Designs\mos\mos6509\src\smallmux.vhd
+# Compile Entity "smallmux"
+# Compile Architecture "behv" of Entity "smallmux"
+# Improper file order detected
+# Automatic file reorder and recompilation required.
+# File reorder and recompilation in progress
+# Top-Level unit detected
+# Entity  =>   TB_MP
+# Configuration  =>   CFG_TB_MP
+# File: c:\My_Designs\mos\mos6509\src\tb_mp.vhd
+# Compile Entity "TB_MP"
+# Compile Architecture "behv" of Entity "TB_MP"
+# Compile Configuration "CFG_TB_MP"
+# File: c:\My_Designs\mos\mos6509\src\datapath.vhd
+# Compile Entity "datapath"
+# Compile Architecture "struct" of Entity "datapath"
+# File: c:\My_Designs\mos\mos6509\src\ctrl_unit.vhd
+# Compile Entity "ctrl_unit"
+# Compile Architecture "struct" of Entity "ctrl_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  3.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+acom $DSN/src/microprocessor.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\mos\mos6509\src\microprocessor.bde'.
+# DRC: Warning: microprocessor.bde - 0 error(s), 11 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\mos\mos6509\compile\microprocessor.vhd from c:\My_Designs\mos\mos6509\src\microprocessor.bde ...
+# Generation successful
+# File: .\microprocessor.vhd
+# Compile Entity "microprocessor"
+# Compile Architecture "structure" of Entity "microprocessor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: 21:40, 16 мая 2018 г.
+# Design: Opening design "c:\My_Designs\mos\mos6510\mos6510.adf"
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "mos6510" has been set as active.

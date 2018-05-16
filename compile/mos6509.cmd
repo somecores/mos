@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\mos\library.cfg"  -j "c:\My_Designs\mos\mos6509\projlib.cfg"  -d "c:\My_Designs\mos\mos6509\compile\"  -work mos6509 -dbg -e 100 "c:\My_Designs\mos\mos6509\compile\microprocessor.vhd" 

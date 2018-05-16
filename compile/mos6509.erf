@@ -1,0 +1,4 @@
+MESSAGE "File: .\microprocessor.vhd" 
+MESSAGE "Compile Entity "microprocessor"" 
+MESSAGE "Compile Architecture "structure" of Entity "microprocessor"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
